@@ -1,12 +1,7 @@
 :root {
-    --coffee-dark: #14203E;
-    --coffee-light: #C9ADA7;
-    --coffee-medium: #A87C60;
-    --coffee-accent: #D2B48C;
-    --coffee-cream: #F5F5DC;
-    --coffee-gold: #FFD700;
-    --text-dark: #2c2416;
-    --text-light: #f3f3f3;
+    --coffee-dark: #0B0F19;
+    --text-dark: #00F0FF;
+    --text-light: #FFFFFF;
 }
 
 * {
@@ -18,8 +13,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: var(--coffee-cream);
-    color: var(--text-dark);
+    background: var(--coffee-dark);
+    color: var(--text-light);
     line-height: 1.7;
     overflow-x: hidden;
 
@@ -65,26 +60,26 @@ header {
 }
 
 .fa-solid {
-    color: #00B6DA;
+    color: var(--text-dark);
 }
 
 
 .logo-icon {
     font-size: 28px;
-    color: #F4F0E3;
+    color: var(--text-light);
 }
 
 .logo-text {
     font-family: 'playfair display', serif;
     font-size: 28px;
     font-weight: 900;
-    color: #00B6DA;
+    color: var(--text-dark);
     letter-spacing: 1px;
 
 }
 
 .logo-text span {
-    color: #F4F0E3;
+    color: var(--text-light);
 }
 
 
@@ -100,7 +95,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #9ECDFF;
+    color: var(--text-dark);
     font-size: 16px;
     font-weight: 600;
     position: relative;
@@ -113,7 +108,7 @@ nav a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #00B6DA;
+    background: var(--text-light);
     left: 0;
     bottom: 0;
     border-radius: 2px;
@@ -128,7 +123,7 @@ nav a:hover:after {
 .icons {
     position: absolute;
     font-size: 2.8rem;
-    color: #00B6DA;
+    color: red;
     cursor: pointer;
     display: none;
 }
@@ -159,7 +154,7 @@ nav a:hover:after {
     }
 
     .menu-toggle:focus-visible+.icons {
-        outline: 2px solid #00B6DA;
+        outline: 2px solid var(--text-dark);
         outline-offset: 4px;
     }
 
@@ -229,9 +224,9 @@ button {
     min-height: 52px;
     max-width: 100%;
     padding: 12px 24px;
-    border: 2px solid #00B6DA;
+    border: 2px solid var(--text-dark);
     border-radius: 999px;
-    background: linear-gradient(135deg, #00B6DA, #1685B5);
+    background: linear-gradient(135deg, var(--text-dark), #1685B5);
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
@@ -286,7 +281,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #14203E;
+    background: var(--coffee-dark);
     z-index: -1;
 }
 
@@ -301,22 +296,7 @@ button {
     display: flex;
 }
 
-.hero-subtitle {
-    font-size: 20px;
-    color: var(--coffee-accent);
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    align-items: center;
-    gap: 10px;
-}
 
-.hero-subtitle ::before {
-    content: '';
-    width: 50px;
-    height: 2px;
-    background: #00B6DA;
-}
 
 .hero-title {
     font-size: 58px;
@@ -328,7 +308,7 @@ button {
 
 /*je viens de changer la couleur  de cette span*/
 .hero-title span {
-    color: var(--coffee-cream);
+    color: var(--text-dark);
     position: relative;
 }
 
@@ -348,8 +328,8 @@ button {
 .products {
     padding: 120px 0;
     position: relative;
-    background-color: #14203E;
-    border-top: 4px solid #9ECDFF;
+    background-color: var(--coffee-dark);
+    border-top: 4px solid var(--text-dark);
 
 }
 
@@ -367,7 +347,7 @@ button {
 
 .section-title {
     font-size: 42px;
-    color: #9ECDFF;
+    color: var(--text-dark);
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -378,7 +358,7 @@ button {
     position: absolute;
     width: 80px;
     height: 3px;
-    background: #14203E;
+    background: var(--text-dark);
     left: 50%;
     bottom: -10px;
     transform: translateX(-50%);
@@ -396,7 +376,7 @@ button {
 }
 
 .product-card {
-    background: #3F6182;
+    background: var(--coffee-dark);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -406,7 +386,7 @@ button {
 
 .product-card:hover {
     transform: translateY(-15px);
-    border: 2px solid #00B6DA;
+    border: 2px solid var(--text-dark);
 }
 
 .product-img {
@@ -473,12 +453,12 @@ button {
     overflow: hidden;
     isolation: isolate;
     background: var(--coffee-dark);
-    color: #F4F0E3;
+    color: var(--text-light);
     padding: 8px 18px;
     font-size: 14px;
     font-weight: 600;
     border-radius: 20px;
-    border: 1px solid rgba(0, 182, 218, 0.65);
+    border: 1px solid var(--text-dark);
 }
 
 .product-tag span {
@@ -492,7 +472,7 @@ button {
     left: 0;
     width: 40%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #00E5FF);
+    background: linear-gradient(90deg, transparent, var(--text-dark));
     animation: tag-top 1.6s linear infinite;
 }
 
@@ -507,7 +487,7 @@ button {
     right: 0;
     width: 2px;
     height: 40%;
-    background: linear-gradient(180deg, transparent, #00E5FF);
+    background: linear-gradient(180deg, transparent, var(--text-dark));
     animation: tag-right 1.6s linear infinite;
     animation-delay: 0.4s;
 }
@@ -523,7 +503,7 @@ button {
     right: 0;
     width: 40%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #00E5FF);
+    background: linear-gradient(270deg, transparent, var(--text-dark));
     animation: tag-bottom 1.6s linear infinite;
     animation-delay: 0.8s;
 }
@@ -539,7 +519,7 @@ button {
     left: 0;
     width: 2px;
     height: 40%;
-    background: linear-gradient(360deg, transparent, #00E5FF);
+    background: linear-gradient(360deg, transparent, var(--text-dark));
     animation: tag-left 1.6s linear infinite;
     animation-delay: 1.2s;
 }
@@ -586,8 +566,8 @@ h4 {
 
 footer {
     background: var(--coffee-dark);
-    color: #E9FDFC;
-    border-top: 4px solid #00B6DA;
+    color: var(--text-light);
+    border-top: 4px solid var(--text-dark);
     padding: 70px 0 30px;
     position: relative;
 }
@@ -612,7 +592,7 @@ footer {
     position: absolute;
     width: 50px;
     height: 2px;
-    background: #00B6DA;
+    background: var(--text-dark);
     left: 0;
     bottom: 0;
 }
@@ -627,12 +607,12 @@ footer {
 
 .footer-links a {
     text-decoration: none;
-    color: #FAFDF9;
+    color: var(--text-light);
     transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #00B6DA;
+    color: var(--text-dark);
     padding-left: 5px;
 }
 
@@ -651,19 +631,19 @@ footer {
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: var(--coffee-cream);
+    color: var(--text-light);
     transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    background: #00B6DA;
+    background: var(--text-dark);
     transform: translateY(-3px);
 }
 
 .copyright {
     text-align: center;
     font-size: 15px;
-    color: #F4F0E3;
+    color: var(--text-light);
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
